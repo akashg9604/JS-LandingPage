@@ -11,7 +11,7 @@ body{
     color: white;
    
 }
-.header-content span{
+.header-content #sidenav{
     display: block;
     height: 100%;
     width: 0;
