@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-menu" id="header-menu">
+            <div class="header-profile">
+                <img src="profile.png" alt="profile">
+            </div>
+                <hr>
+            <li><a href="#home">Home</a></li>
+            <hr>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <hr>
+            <li><a href="#Blog">Blog</a></li>
+            <hr>
+            <li><a href="#Contact">Contact</a></li>
+            <hr>
+        </div>
+        
+    </header>
+    <main id="mainid">
+        <div class="header-content">
+            <span id="sidenav" onclick="openNav()" >&#9776;</span>
+            <span id="clsbtn" onclick="closeNav()">&times;</span>
+            <div class="heading-title">
+                <h1>My Landing Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, amet!</p>
+                <button id="signUpbtn">Sign Up</button>
+            </div>
+        </div>
+        <section class="main-content-body">
+            <div class="main-content">
+                <h4>What is this landing page about?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure accusamus ab consectetur eos provident
+                    ipsa est perferendis architecto. Provident, quaerat asperiores. Quo esse minus repellat sapiente, impedit
+                    ‘obcaecati necessitatibus.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio officia ipsa. Cum dignissimos possimus
+                    et non provident facilis saey</p>
+                <h4>Tell Me More</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque delectus explicabo qui reprehenderit?
+                    Aspernatur ad similique minima accusamus maiores accusantium libero autem iusto reiciendis ullam impedit
+                    esse quibusdam, deleniti laudantium rerum beatae, deserunt nemo neque, obcaecati exercitationem sit. Earum.
+                    </p>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>Lifetime Access</li>
+                    <li>30 Day Money Back</li>
+                    <li>Tailored Customer Support</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam nostrum, fugiat, itaque natus officia
+                    laborum dolorum id accusantium culpa architecto tenetur fuga? Consequatur provident rerum eius ra
+                    dolor officiis doloremque minima optio dignissimos doloribus odio debitis vero cumque itaque excepturi a
+                    
+                    neque. exnedita nulla earum accusamus renellat adinisci veritatis quam. Insum fusiat iusto nariatur consectetur</p>
+
+            </div>
+        </section>
+    </main>
+    <div class="SignUp-Form" id="SignUpForm">
+        <div class="SignUp-Form-Content">
+            <div class="signup-title">
+                <span class="closebtn" id="closebtn">&times;</span>
+                <h2>Sign Up</h2>
+            </div>
+            <div class="signup-form-body">
+                <h4>Register with us to get offers, support and more</h4>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <label for="cPassword">Confirm Password</label>
+                    <input type="Password" name="cPassword" placeholder="Confirm Password">
+                    <input type="submit" value="Submit">
+                </form>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <h5 style="color: black;"><span class="closebtn" id="closebtn">&copy;</span>By Akash Gaikwad</h5>
+    </footer>
+
+    <script>
+        // sign up form open close model
+        var signUpForm = document.getElementById("SignUpForm");
+        var signUpBtn = document.getElementById("signUpbtn");
+        var closebtn = document.getElementById("closebtn");
+        signUpBtn.onclick = function(){
+            SignUpForm.style.display = "block";
+        }
+        closebtn.onclick = function(){
+            signUpForm.style.display = "none";
+        }
+
+
+        // side nav bar script
+        var headermenu = document.getElementById("header-menu")
+        var sidenavid = document.getElementById("sidenav");
+        var mainid = document.getElementById("mainid");
+        var clsbtn = document.getElementById("clsbtn");
+        sidenavid.onclick = function(){
+                headermenu.style.display = "block";
+                sidenavid.style.marginLeft = "250px";
+                mainid.style.marginLeft="250px"
+                clsbtn.style.display="block";
+        }
+        clsbtn.onclick = function (){
+            headermenu.style.display = "none";
+            sidenavid.style.marginLeft = "0px";
+            mainid.style.marginLeft="0px"
+            clsbtn.style.display="none";
+        }
+
+    </script>
+</body>
+</html>

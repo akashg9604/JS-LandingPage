@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow: auto;
+}
+.header-content{
+    background-color: rgb(48, 50, 107);
+    color: white;
+   
+}
+.header-content span{
+    display: block;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 10px;
+    background-color: rgb(48, 50, 107);
+    font-weight: bold;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.header-content #clsbtn{
+    display: none;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 10px;
+    background-color: rgb(48, 50, 107);
+    font-weight: bold;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.heading-title{
+    padding: 20px 0px;
+    text-align: center;
+}
+.heading-title h1{
+    padding-top: 10px;
+}
+.heading-title p{
+    padding: 20px 0px;
+}
+.heading-title button{
+    background-color: rgb(189, 45, 222);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+/* Side nav CSS Style */
+.header-menu{
+    display:none;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(48, 50, 107);
+    overflow-x: hidden;
+    transition: 0.5s;
+    justify-content: center;
+    border-right: 1px solid rgba(228,227, 227, 0.8);
+}
+/* .header-menu header-profile{
+} */
+.header-menu img{
+    padding: 10% 25%;
+    
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.header-menu li{
+    padding: 20px ;
+    list-style: none;
+}
+.header-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+/* SignUp-Form css style */
+.SignUp-Form{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    left: 0;
+    top: 0;  
+    padding-top: 100px;
+    background-color: rgba(228,227, 227, 0.8);
+}
+.SignUp-Form-Content{
+    background-color: #fefefe;
+    margin: auto;
+    width: 30%;
+}
+.signup-title{
+    background-color: rgb(48, 50, 107);
+    padding: 10px 0px 10px 10px;
+    color: white;
+}
+.signup-title .closebtn{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+.signup-title .closebtn:hover, .closebtn:focus {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(148, 148, 148);;
+}
+.signup-form-body{
+    padding: 10px;
+}
+.signup-form-body h4{
+    margin: 10px 0;
+}
+.signup-form-body label{
+    font-weight: 600;
+}
+input[type=text],input[type=email],input[type=password] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+input[type=submit]{
+    background-color: rgb(189, 45, 222);
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight:700;
+    border-radius: 4px;
+}
+#mainid{
+    margin-left: 0px;
+}
+.main-content-body{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+   
+} 
+.main-content{
+    margin: auto;
+    width: 60%;
+}
+.main-content h4{
+    padding: 15px 0;
+    font-size: 20px;
+}
+.main-content p{
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+}
+.main-content ul{
+    padding-left: 40px;
+}
+
+/* Footer style */
+footer{
+    background-color: rgb(48, 50, 107);
+    height:fit-content;
+}
+footer h5{
+    padding: 10px 0;
+    text-align: center;
+}
+
